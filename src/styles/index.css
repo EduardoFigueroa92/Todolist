@@ -10,3 +10,13 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+ul{
+    border: grey;
+}
+
+body{
+    margin-top: 100px;
+}
+input{
+    border: none;
+}
