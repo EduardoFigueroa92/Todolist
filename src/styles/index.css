@@ -10,13 +10,32 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-ul{
-    border: grey;
-}
 
+h1{
+    text-align: center;
+}
 body{
     margin-top: 100px;
 }
-input{
-    border: none;
+.container{
+    width: 400px;
+    background-color: #eeeeee;
+    border-color: black;
+    border-radius: 10px;
+    font-family: fantasy;
+    color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-color: grey;
+    box-shadow: 5px 5px 5px grey;
+
 }
+#sinPunto {
+    list-style: none;
+}
+#papelera{
+    display: flex;
+    align-items: ;
+    margin-right: 50px;
+}
+

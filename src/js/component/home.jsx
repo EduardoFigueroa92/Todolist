@@ -9,9 +9,9 @@ const Home = () => {
 	const [ Todolist, setTodolist ] = useState([])
 	return (
 		<div className="container">
-			<h1>My todolist</h1>
+			<h1>Lista de tareas pendientes</h1>
 				<ul>
-					<li>
+					<li id="sinPunto">
 						<input type="text" 
 						onChange= {(e) => setInputValue (e.target.value)}
 						value={inputValue}
@@ -19,11 +19,11 @@ const Home = () => {
 							if (e.key === "Enter"){ setTodolist(Todolist.concat([inputValue]));
 								setInputValue("")}
 							}}
-						placeholder="Qué necesitas?"></input>
+						placeholder="Tareas pendientes"></input>
 					</li>
 					{Todolist.map((item,index) =>
 					<li>
-						{item}<i className="fas fa-trash-alt" onClick={() => setTodolist(Todolist.filter((t,currentIndex)=> index != currentIndex))}></i>
+						{item}    <i className="fas fa-trash-alt" onClick={() => setTodolist(Todolist.filter((t,currentIndex)=> index != currentIndex))}></i>
 					</li>
 					)}
 			</ul>
