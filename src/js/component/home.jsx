@@ -23,7 +23,7 @@ const Home = () => {
 					</li>
 					{Todolist.map((item,index) =>
 					<li>
-						{item}    <i className="fas fa-trash-alt" onClick={() => setTodolist(Todolist.filter((t,currentIndex)=> index != currentIndex))}></i>
+						{item}    <i className="fas fa-trash-alt float-end" onClick={() => setTodolist(Todolist.filter((t,currentIndex)=> index != currentIndex))}></i>
 					</li>
 					)}
 			</ul>

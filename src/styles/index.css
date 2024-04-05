@@ -38,4 +38,8 @@ body{
     align-items: ;
     margin-right: 50px;
 }
+.fas fa-trash-alt{
+    float: right;
+    margin-left: 80px;
 
+}
