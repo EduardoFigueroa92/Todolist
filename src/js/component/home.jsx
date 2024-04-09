@@ -16,8 +16,8 @@ const Home = () => {
 						onChange= {(e) => setInputValue (e.target.value)}
 						value={inputValue}
 						onKeyUp={(e) => {
-							if (e.key === "Enter"){ setTodolist(Todolist.concat([inputValue]));
-								setInputValue("")}
+							if (e.key === "Enter") { if(inputValue.trim().length>0 != " ") {setTodolist(Todolist.concat([inputValue]));
+								setInputValue("")}}
 							}}
 						placeholder="Tareas pendientes"></input>
 					</li>
